@@ -115,7 +115,8 @@ renderer.setClearColor('#aaaaaa')
 let mixer = null;
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
-'/models/01/uploads_files_3861776_bedroom.glb',
+'/models/Duck/WhaleShark.gltf',
+
 function (gltf)  {
        gltf.scene.scale.set(0.25, 0.25, 0.25);
        processMaterials(gltf.scene);
@@ -127,8 +128,8 @@ function (gltf)  {
 );
 
 gltfLoader.load(  
-'/models/01/uploads_files_3861776_bedroom.glb',
- function (gltf)  {
+'/models/Duck/WhaleShark.gltf',
+function (gltf)  {
            gltf.scene.scale.set(0.25, 0.025, 0.25);
            processMaterials(gltf.scene);
            scene.add(gltf.scene);
