@@ -112,10 +112,13 @@ renderer.setClearColor('#aaaaaa')
 /**
  * Animate
  */
+
+
 let mixer = null;
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
-'/models/Duck/WhaleShark.gltf',
+//'/models/Duck/WhaleShark.gltf',
+'/models/pez01/OceanSunfish.gltf',
 
 function (gltf)  {
        gltf.scene.scale.set(0.25, 0.25, 0.25);
@@ -128,16 +131,19 @@ function (gltf)  {
 );
 
 gltfLoader.load(  
-'/models/Duck/WhaleShark.gltf',
+//'/models/Duck/WhaleShark.gltf',
+'/models/pez01/OceanSunfish.gltf',
 function (gltf)  {
            gltf.scene.scale.set(0.25, 0.025, 0.25);
            processMaterials(gltf.scene);
            scene.add(gltf.scene);
-     
+         
 
 
         }
     );
+
+    
 
 const clock = new THREE.Clock()
 let previousTime = 0
@@ -147,6 +153,7 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
     const deltaTime = elapsedTime - previousTime
     previousTime = elapsedTime;
+    
 
   // Model animation
    if(mixer) {
