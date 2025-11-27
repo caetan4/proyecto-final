@@ -117,8 +117,10 @@ renderer.setClearColor('#aaaaaa')
 let mixer = null;
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
+
+'/models/pez02/garden.gltf',
 //'/models/Duck/WhaleShark.gltf',
-'/models/pez01/OceanSunfish.gltf',
+//'/models/pez01/OceanSunfish.gltf',
 
 function (gltf)  {
        gltf.scene.scale.set(0.25, 0.25, 0.25);
@@ -131,8 +133,9 @@ function (gltf)  {
 );
 
 gltfLoader.load(  
+'/models/pez02/garden.gltf',
 //'/models/Duck/WhaleShark.gltf',
-'/models/pez01/OceanSunfish.gltf',
+//'/models/pez01/OceanSunfish.gltf',
 function (gltf)  {
            gltf.scene.scale.set(0.25, 0.025, 0.25);
            processMaterials(gltf.scene);
