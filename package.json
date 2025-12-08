@@ -1,20 +1,15 @@
 {
-  "name": "threejs-journey-exercise",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "proyecto-final",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "deploy": "vercel --prod"
-
-  },
-  "devDependencies": {
-    "vite": "^6.2.2",
-    "vite-plugin-restart": "^0.4.2"
+    "build": "vite build"
   },
   "dependencies": {
-    "lil-gui": "^0.20.0",
-    "three": "^0.174.0"
+    "@splinetool/loader": "^1.2.3",
+    "three": "^0.152.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }
